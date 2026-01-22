@@ -7,6 +7,15 @@ A lightweight, no-frills OPC UA Client. Connect to servers, browse nodes, and mo
 ![Status](https://img.shields.io/badge/status-active-success.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
+![Plain OPC UA Client Screenshot](screenshots/screenshot.png)
+
+## 🔗 Related Projects & Context
+
+This client is designed to work in conjunction with [db-opc-playback](https://github.com/djbrandl/db-opc-playback).
+
+*   **db-opc-playback** is intended to replay database events in a time series query via OPC UA.
+*   **plain-opc-client** (this project) was originally created to act as a verification tool for that playback data.
+
 ---
 
 ## 🚀 Getting Started
