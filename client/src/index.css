@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-vs-dark: #1e1e1e;
+  --color-vs-panel: #252526;
+  --color-vs-header: #333333;
+  --color-vs-border: #3e3e42;
+  --color-vs-blue: #007acc;
+  --color-vs-text: #cccccc;
+}
+
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-vs-dark text-vs-text overflow-hidden h-screen;
+}
+
+/* Component Classes */
+.status-badge {
+  @apply px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider select-none inline-block;
+}
+
+.status-badge.good {
+  @apply bg-green-900/60 text-green-200 border border-green-800;
+}
+
+.status-badge.bad {
+  @apply bg-red-900/60 text-red-200 border border-red-800;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { @apply bg-vs-dark; }
+::-webkit-scrollbar-thumb { @apply bg-neutral-700 hover:bg-neutral-600; }
